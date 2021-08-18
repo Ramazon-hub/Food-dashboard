@@ -1,0 +1,17 @@
+.food-list{
+    padding-top: 40px;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow-y: auto;
+}
+.choose-dishes{
+    font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+}
+.choose-dine{
+    margin-top: 24px;
+    margin-bottom: 58px;
+}

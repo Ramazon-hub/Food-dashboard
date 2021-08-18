@@ -28,10 +28,12 @@ line-height: 140%;
 .nested{
   list-style: none;
   display: flex;
+  border-bottom:1px solid #393C49
 
 }
 .nested-item{
     margin-right: 32px;
+    padding-bottom: 13px;
 }
 .nested-link{
     text-decoration: none;

@@ -1,0 +1,33 @@
+.food-list-item{
+/* max-width: 190px; */
+background-color: #1F1D2B;
+position: relative;
+padding-top: 74px;
+margin:0 10px;
+margin-bottom: 60px;
+
+}
+.food-name{
+    font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+text-align: center;
+
+}
+.food-img{
+border-radius: 50%;
+position: absolute;
+top: -36px;
+}
+.food-price{
+    font-size: 14px;
+    line-height: 140%;
+text-align: center;
+
+}
+.food-qoldiq{
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #ABBBC2;
+}

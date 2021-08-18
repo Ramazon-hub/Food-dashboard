@@ -38,16 +38,14 @@ function Home(){
                             <li className="nested-item">
                                 <Link to={`${url}/disert`} className="nested-link" activeClassName="active-nested-link">Disert</Link>
                             </li>
-                        </ul>       
+                        </ul>  
                         <Switch>
                             <Route path={`${url}/hotdishes`} component={Dishes}/>
                             <Route path={`${path}/colddishes`} component={Dishes} />
                             <Route path={`${path}/soup`} component={Dishes}/>
                             <Route path={`${path}/grill`} component={Dishes}/>
                             <Route path={`${path}/appetizer`} component={Dishes}/>
-                            <Route path={`${path}/disert`} component={Dishes}/>
-
-                            
+                            <Route path={`${path}/disert`} component={Dishes}/>                            
                                
                         </Switch>                
                     
