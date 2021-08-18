@@ -1,0 +1,67 @@
+.Sidebar{
+    padding: 15px 0;
+    background-color: #1F1D2B;
+    height: 100vh;
+
+}
+.logo{
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 24px;
+}
+.navlist{
+    padding-left: 14px;
+    list-style: none;
+}
+.navitem{
+    /* margin-bottom: 5px; */
+
+}
+.navlink{
+    display: block;
+    padding: 10px;
+    padding-right: 24px;
+    border-radius: 12px 0px 0px 12px;
+    position: relative;
+}
+.navlink span{
+    display: flex;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.active-navlink{
+    background-color: #252836;
+
+}
+.active-navlink::before{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #252836;
+}
+.active-navlink::after{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #252836;
+}
+.active-navlink span{
+    background-color: #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+}
+.active-navlink path{
+    fill: #fff;
+}

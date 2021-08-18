@@ -1,0 +1,79 @@
+
+.home{
+    width: 100%;
+    display: flex;
+}
+.main-section{
+width: 70%;
+padding: 0 24px;
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+.resto-name{
+    font-weight: 600;
+font-size: 28px;
+line-height: 140%;
+margin-bottom: 4px;
+}
+.date{
+    color: #E0E6E9;
+    font-size: 16px;
+line-height: 140%;
+}
+.nested{
+  list-style: none;
+  display: flex;
+
+}
+.nested-item{
+    margin-right: 32px;
+}
+.nested-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+}
+.active-nested-link{
+    color:  #EA7C69;
+}
+.orders{
+    width: 30%;
+    background-color: #1F1D2B;
+
+}
+.search-food{
+   background:transparent;
+   border: none;
+   outline: none;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ABBBC2;
+}
+.search-label{
+    width: 30%;
+    display: block;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    padding: 14px 0;
+    padding-right: 14px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+   
+}
+.search-label::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: url('./imgs/search.svg');
+    vertical-align: text-top;
+}
