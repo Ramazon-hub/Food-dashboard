@@ -2,10 +2,11 @@
 /* max-width: 190px; */
 background-color: #1F1D2B;
 position: relative;
-padding-top: 74px;
+padding: 74px 24px 24px 24px ;
 margin:0 10px;
 margin-bottom: 60px;
-
+border-radius: 16px;
+cursor: pointer;
 }
 .food-name{
     font-weight: 500;
@@ -23,6 +24,10 @@ top: -36px;
     font-size: 14px;
     line-height: 140%;
 text-align: center;
+margin-top: 8px;
+margin-bottom: 4px;
+color: #ABBBC2;
+
 
 }
 .food-qoldiq{

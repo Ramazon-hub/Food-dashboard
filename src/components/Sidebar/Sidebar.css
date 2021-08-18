@@ -1,5 +1,5 @@
 .Sidebar{
-    padding: 15px 0;
+    padding: 18px 0;
     background-color: #1F1D2B;
     height: 100vh;
 
@@ -14,7 +14,7 @@
     list-style: none;
 }
 .navitem{
-    /* margin-bottom: 5px; */
+    margin-bottom: 10px;
 
 }
 .navlink{

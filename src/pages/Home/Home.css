@@ -4,7 +4,7 @@
     display: flex;
 }
 .main-section{
-width: 70%;
+width: 75%;
 padding: 0 24px;
 }
 .main-top{
@@ -45,15 +45,10 @@ line-height: 140%;
 .active-nested-link{
     color:  #EA7C69;
 }
-.orders{
-    width: 30%;
-    background-color: #1F1D2B;
-
-}
 .search-food{
-   background:transparent;
-   border: none;
-   outline: none;
+    background:transparent;
+    border: none;
+    outline: none;
     font-size: 14px;
     line-height: 140%;
     color: #ABBBC2;
@@ -68,7 +63,7 @@ line-height: 140%;
     padding-left: 8px;
     box-sizing: border-box;
     border-radius: 8px;
-   
+    
 }
 .search-label::before{
     content: '';
@@ -78,4 +73,49 @@ line-height: 140%;
     margin-right: 8px;
     background-image: url('./imgs/search.svg');
     vertical-align: text-top;
+}
+.orders{
+    width: 35%;
+    background-color: #1F1D2B;
+    padding: 24px;
+
+}
+.order-number{
+    margin-bottom: 24px;
+}
+.order-type-btn{
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 7px 12px;
+    color:#EA7C69;
+    margin-right: 8px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 140%;
+
+}
+.active-btn{
+    background-color:#EA7C69 ;
+    color: #fff;
+}
+.order-data{
+    display: flex;
+   margin-top: 24px;
+   padding-bottom: 24px;
+    border-bottom: 1px solid #393C49;
+
+}
+.order-data p{
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+}
+.item{
+    margin-right: auto;
+}
+.qty{
+    margin-right: 43px;
 }

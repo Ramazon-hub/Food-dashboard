@@ -1,10 +1,17 @@
 import './Home.css';
 import { Link, Switch,Route, useRouteMatch } from 'react-router-dom';
 import Dishes from '../../components/Dishes/Dishes';
+import OrderFood from '../../components/OrderFood/OrderFood';
 function Home(){
     const {url,path} = useRouteMatch();
     console.log(url,'url');
     console.log(path,'path');
+    function orderTypeBtn(){
+      const btns = document.querySelectorAll('.order-type-btn')
+    btns.forEach(btn=>{
+        btn.classList.add("active-btn")
+    })
+    }
     return(
         <div className="home">
                 <div className="main-section">
@@ -40,18 +47,31 @@ function Home(){
                             </li>
                         </ul>  
                         <Switch>
-                            <Route path={`${url}/hotdishes`} component={Dishes}/>
-                            <Route path={`${path}/colddishes`} component={Dishes} />
-                            <Route path={`${path}/soup`} component={Dishes}/>
+                            <Route path={`${path}`} component={Dishes} exact/>
+                            <Route path={`${path}/:type`} component={Dishes} />
+                            {/* <Route path={`${path}/soup`} component={Dishes}/>
                             <Route path={`${path}/grill`} component={Dishes}/>
                             <Route path={`${path}/appetizer`} component={Dishes}/>
-                            <Route path={`${path}/disert`} component={Dishes}/>                            
+                            <Route path={`${path}/disert`} component={Dishes}/> */}
                                
                         </Switch>                
                     
                 </div>
                 <div className="orders">
-                    <p>Orders</p>
+                    <div className="orders-type">
+                            <h3 className="order-number">Orders #332535</h3>
+                            <button className="order-type-btn " onClick={orderTypeBtn} >Dine In</button>
+                            <button className="order-type-btn " onClick={orderTypeBtn} >To Go</button>
+                            <button className="order-type-btn " onClick={orderTypeBtn} >Delivery</button>
+                           <div className="order-data">
+                                <p className=" item">Item</p>
+                                <p className=" qty" >Qty</p>
+                                <p className="">Price</p>
+                           </div>
+                    </div>
+                    <ul>
+                        <OrderFood/>
+                    </ul>
                 </div>
         </div>
     )
