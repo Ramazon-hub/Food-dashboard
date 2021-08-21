@@ -12,7 +12,7 @@ function App() {
         <div className="app-wrapper">
             <Sidebar/>
             <Switch>
-              <Route path="/home" component={Home}/>
+              <Route path="/home" component={Home} />
               <Route path="/dashboard" component={Dashboard}/>
               <Route path="/settings" component={Sozlamlar}/>
 

@@ -17,7 +17,7 @@ function Sidebar(){
            </NavLink>
            <ul className="navlist">
                <li className="navitem">
-                   <NavLink to="/home" className="navlink" activeClassName="active-navlink" >
+                   <NavLink to="/home" className="navlink" activeClassName="active-navlink"  >
                        <span>
                             <HomeIco/>
                        </span>

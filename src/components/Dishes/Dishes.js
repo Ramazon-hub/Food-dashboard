@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 
 function Dishes(){
     const { type } = useParams()
-    console.log(type)
     return(
         <div>
             <div className="choose-dine">
