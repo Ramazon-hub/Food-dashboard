@@ -108,7 +108,7 @@ function Home(){
 
                             <p className="payment-methods-p">Peyment Methods</p>
                             <form>
-                                <label for="id">
+                                <label htmlFor="id">
                                     <Creditcard/>
                                     <span>Credit Card</span>
                                     <input type="radio" id="id"/>

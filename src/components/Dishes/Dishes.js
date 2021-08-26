@@ -22,12 +22,8 @@ function Dishes(){
                 <ul className="food-list">
 
                     {
-                        foods.filter((food)=>{
-                            if(food.type === type ){
-                                return food
-                            }
-                           
-                        }).map(food=>(
+                        foods.filter((food)=>food.type === type )                 
+                        .map(food=>(
                             <Food
                                 key = {food.id}
                                 id={food.id}

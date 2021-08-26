@@ -24,7 +24,7 @@ function Food( { id,img,foodName,price,qoldiq} ){
 
     return(
         <>
-            <li className="food-list-item" onClick={clickFood} data-id={id}>
+        <li className="food-list-item" key={id} onClick={clickFood} data-id={id}>
                 <img src={img} className="food-img" alt="img" />
                 <h3 className="food-name" >{foodName}</h3>
                 <p className="food-price" >${price}</p>

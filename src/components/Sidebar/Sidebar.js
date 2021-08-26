@@ -12,7 +12,7 @@ import StatistikIco from "../svgs/StatistikIco";
 function Sidebar(){
     return(
         <div className="Sidebar">
-           <NavLink to="/" className="logo">
+           <NavLink to="/home" className="logo">
                <Logo/>
            </NavLink>
            <ul className="navlist">
